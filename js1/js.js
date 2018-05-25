@@ -12,13 +12,16 @@ request(url);
  	xhr.onreadystatechange = function () {
         if(xhr.readyState === 4 && xhr.status === 200) {
            var obj = JSON.parse(xhr.response);
+           console.log(obj);
            var img = obj.avatar_url;
            var name = obj.login;
  		var repos = obj.public_repos;
  		var data = obj.created_at;
+ 		var followers = obj.followers;
+ 		var url = obj.html_url;
  		
 
- 		display(img,repos,data,name);
+ 		display(img,repos,data,name,followers, url);
         }
    }
 	
@@ -26,11 +29,13 @@ request(url);
 
 
 
-function display(img,repos,data,name) {
+function display(img,repos,data,name,followers,url) {
 	document.getElementById('imege').innerHTML = '<img src="'+ img +'">';
 	document.getElementById('Data').innerHTML = 'Дата регистрации :'+ data;
 	document.getElementById('reposit').innerHTML = 'Количество Репоз :'+ repos;
-	document.getElementById('name').innerHTML = 'Имя пользоваткля:'+ name
+	document.getElementById('name').innerHTML = 'Name:'+ name;
+	document.getElementById('followers').innerHTML = 'Подписки:'+ followers
+	document.getElementById("atr").setAttribute("href", url)
 }
 //Курс валют
 var data;
@@ -72,7 +77,7 @@ function clock() {
  		second = "0" + second;
  	}
  	if (hours + ":" + minutes + ":" + second === '00:00:00'){
- 		document.getElementById('clock1').style.color = 'black';
+ 		document.getElementById('clock1').style.color = 'blue';
  	}
 	var string = hours + ":" + minutes + ":" + second;
  	
@@ -82,5 +87,3 @@ function clock() {
 }
 setInterval(clock, 1000);
 clock();
-
-

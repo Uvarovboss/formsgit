@@ -1,27 +1,70 @@
 body{
+	margin: 0 auto;
+	max-width: 2000px;
 	background-color: silver;
-}.container{
+}
+.container{
 	display: flex;
+	background-image: url(http://remexdecor.ru/system/pattern_pictures/5814c223dac4b409550003e3/priroda-155.jpg);
+	opacity: 0.6;
+	background-repeat: no-repeat;
+	width: 90%;
+	height: 500px;
+	margin: 0 auto;
 }
 .in_container{
 	width: 50%;
-	display: flex;
+/*	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: center;
+	align-items: center;*/
 	 
 }
-h1{
+#imege{
+	widows: 200px;
+	height: 200px;
+
+}
+#imege img{
+	width: 200px;
+	height: 200px;
+	border:2px solid white;
+	border-radius: 100px;
+	position: relative;	
+	top: -220px;
+	left: 90px;
+}
+#name{
 	margin: 0;
+	color: white;
+	position: relative;
+	top: -350px;
+	left: 320px;
+}
+#reposit{
+	position: relative;
+	top: -350px;
+	left: 320px;
+	color: white;
 }
 h3{
 	margin:0;
 }
+#Data{
+margin-left: 80px;
+}
+#followers{
+margin-left: 80px;
+}
+
 
 table{
 /*	border:solid 2px black;*/
-	background: black;
-	margin-top: 100px;
+	margin-top: -270px;
+	margin-right: 80px;
+	display: flex;
+	justify-content: flex-end;
+
 }
 td{
 	border:solid 1px black;
@@ -34,10 +77,136 @@ td{
 	padding-left: 40%;	
 }
 #clock1{
-	color: blue;
+	height: 50px;
+	color: black;
 	font-size: 40px;
 	position:absolute;
-	top: 700px;
-	left: 1400px;
+	top: 2px;
+	left: 1320px;
 	position: fixed;
 }
+#btn{
+	background-color: red;
+	color: white;
+	height: 40px;
+	width: 140px;
+	
+	border:0px;
+	border-radius: 30px;
+	font-size: 17px;
+	outline: none;
+}
+#atr{
+position: relative;
+	top: -310px;
+	left: 320px;	
+}
+#icon{
+	display: flex;
+}
+#bosswether{
+	margin-left: 1100px;
+}
+#select-city{
+    width: 70%;
+    border-radius: 10px 0 0 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #607D8B;
+    font-weight: bold;
+   
+}
+#search-block{
+    width: 400px;
+    display: flex;
+}
+.weather-block{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(33, 38, 43, 0.818);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#btn-search {
+    text-decoration: none;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+    background: #2196f3;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    width: 30%;
+    text-align: center;
+    border-radius:0 10px 10px 0;
+    cursor: pointer;
+  }
+
+  #day, #date,#city-name,#description{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+  }
+  #description{
+    text-transform: uppercase;
+  }
+  #temparature{
+    text-align: center;
+    color: #ffeb3b;
+    font-size: 75px;
+    padding-top: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+  }
+  #weather{
+      text-align: center;
+  }
+  input {
+    outline:none;
+ }
+ footer{
+ 	height: 300px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	background-color: white;
+ }
+ #ftext{
+ 	text-align: center;	
+ 	margin-top: -20px;
+ }
+ #foot{
+ 	display: flex;
+ 	justify-content: space-around;
+ }
+ #work1{
+margin-left: 100px;
+ }
+ #work2{
+ 	margin-left: 100px;
+ }
+ #work3{
+ 	margin-left: 100px;
+ }
+ button{
+ 	background-color: red;
+ 	color: white;
+ 	height: 35px;
+ 	width: 120px;
+ 	outline: none;
+ }
+ p{
+ 	text-align: center;
+ }
+ #img{
+ 	display: flex;
+ 	align-items: flex-end;
+ 	float: right;
+ }
